@@ -1,21 +1,29 @@
-//Day 20 coding Statement : Write a program to identify if the number is Prime number or not
-#include <iostream>
-using namespace std;
-int main()
-{
-    int num,count = 0;
-    cout << "Enter a number: ";
-    cin >> num;
-    for (int i = 1; i <= num; i++)
+    //Day 20 coding Statement : Write a program to identify if the number is Prime number or not
+    #include <iostream>
+    #include <cmath>
+    using namespace std;
+    int main()
     {
-        if(num % i == 0)
-        count++;
-        else
-        continue;
-    }
+        int num;
+        bool flag=true;
+        cout << "Enter a number: ";
+        cin >> num;
+        if (num < 2) 
+        {
+            cout << "Not a Prime Number" << endl;
+            return 0;
+        }
 
-    if(count == 2)
-    cout << "Prime Number";
-    else
-    cout << "Not a Prime Number";
-}
+        for (int i = 2; i <= sqrt(num); i++)
+        {
+            if(num % i == 0)
+            flag = false;
+            break;
+        }
+
+        if(flag )
+        cout << "Prime Number";
+        else
+        cout << "Not a Prime Number";
+        return 0;
+    }
