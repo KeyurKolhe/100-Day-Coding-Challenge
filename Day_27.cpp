@@ -1,4 +1,4 @@
-//Day 2 coding Statement : Write a program to identify if the character is an alphabet or not.
+//Day 27 coding Statement : Write a program to find the double of the given number without using arithmetic operator
 #include <iostream>
 using namespace std;
 
