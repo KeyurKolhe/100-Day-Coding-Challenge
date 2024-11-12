@@ -17,4 +17,5 @@ int main()
             str[i] = tolower(str[i]);
     }
     cout << "Toggled Output :" << str;
+    return 0;
 }
